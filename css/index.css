@@ -1,11 +1,11 @@
 @import url(http://fonts.googleapis.com/css?family=Oswald:400);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
+@import url(http://fonts.googleapis.com/css?family=Oxygen:400,300,500);
 
 body {
 	margin: 0px;
 	padding: 0px;
 	background-color: #CCC;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Oxygen', sans-serif;
 }
 
 h1 {
@@ -34,12 +34,16 @@ h1 {
 }
 
 .img {
-	width: 25%;
+	width: 40% !important;
+	margin-right: 50px;
 	float: right;
 }
 
 .icon {
+	float: right;
 	padding-left: 5%;
+	padding-right: 0px;
+	margin-right: 0px;
 	height: 72px;
 	-webkit-transition:all 200ms linear;
     -moz-transition:all 200ms linear;
@@ -68,7 +72,7 @@ h1 {
 	padding-right: 4%;
 	padding-bottom: 4%;
 	background-color: #FFF;
-	font-size: 18px;
+	font-size: 16px;
 }
 
 #summary {
