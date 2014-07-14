@@ -18,6 +18,26 @@ Date	: 7/14/2014
 
 	<!-- Main body -->
 	<body>
+
+		<img class = "background" src = "assets/back.jpg">
+
+		<div class = "cycle-slideshow auto cycle" 
+			    data-cycle-fx 				= scrollHorz
+			    data-cycle-timeout 			= 2000
+			    data-cycle-loader = true
+			    data-cycle-progressive = "#images2"
+			    >
+			    <!-- only one image declared in markup -->
+			    <img class = "cycleimg" src = "assets/backgrounds/pic1.png">
+
+			    <script id="images2" type="text/cycle">
+				    <img class = "cycleimg" src = "assets/backgrounds/pic2.png">
+				    <img class = "cycleimg" src = "assets/backgrounds/pic3.png">
+				    <img class = "cycleimg" src = "assets/backgrounds/pic4.png">
+				</script>
+			</div>
+		</div>
+
 		<div class = "nav">
 			<div class = "wrapper">
 				<p class = "title">PC MASTER RACE</p>
@@ -57,8 +77,14 @@ Date	: 7/14/2014
 				<li>	More graphical detail (immersion)							</li>
 			</ul>
 			<b> You're probably going to own some sort of computer anyways, so why not pay a bit more on top to make it a gaming rig? </b>
-		</div>
+
+			<br><br><br>
 
 	</body>
+
+	<script src = "http://code.jquery.com/jquery-1.11.0.min.js">	</script>
+	<script src = "http://malsup.github.com/jquery.cycle2.js">		</script>
+	<script src = "js/index.js">									</script
+
 </html>
 
