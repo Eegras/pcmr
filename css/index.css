@@ -12,6 +12,10 @@ h1 {
 	font-family: 'Oswald', sans-serif;
 }
 
+b {
+	font-size: 20px;
+}
+
 .cycle {
 	position: fixed;
 	bottom: 0;
@@ -99,4 +103,5 @@ h1 {
 
 #summary {
 	margin-top: 120px;
+	font-size: 18px;
 }
