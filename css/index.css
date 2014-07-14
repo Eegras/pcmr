@@ -18,6 +18,10 @@ h1 {
 	right: 0;
 	max-width: 50%;
 	height: 15%;
+	-webkit-transition:all 200ms linear;
+    -moz-transition:all 200ms linear;
+    -o-transition:all 200ms linear;
+    transition:all 200ms linear;
 
 }
 
