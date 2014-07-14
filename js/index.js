@@ -3,15 +3,15 @@ jQuery(window).bind('orientationchange', function(e) {
   switch ( window.orientation ) {
 
     case 0:
-        alert('portrait mode');
+        $(".cycleimg").css("opacity", 0);
     break;
 
     case 90:
-        alert('landscape mode screen turned to the left');
+        $(".cycleimg").css("opacity", 1);
     break;
 
     case -90:
-        alert('landscape mode screen turned to the right');
+        $(".cycleimg").css("opacity", 1);
     break;
 
   }
