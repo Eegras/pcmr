@@ -1,3 +1,7 @@
+if (window.orientation == 0 || window.orientation == 180) {
+    $(".cycle").css("opacity", 0);
+}
+
 jQuery(window).bind('orientationchange', function(e) {
 
   switch ( window.orientation ) {
