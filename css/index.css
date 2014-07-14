@@ -4,7 +4,7 @@
 body {
 	margin: 0px;
 	padding: 0px;
-	background-color: #555;
+	background-color: #DDD;
 	font-family: 'Oxygen', sans-serif;
 }
 
@@ -92,6 +92,9 @@ h1 {
 	margin-bottom: 5%;
 	background-color: #FFF;
 	font-size: 16px;
+	-webkit-box-shadow: 20px 20px 0px 0px rgba(0, 0, 0, 0.2);
+   	-moz-box-shadow: 20px 20px 0px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 20px 20px 0px 0px rgba(0, 0, 0, 0.2);
 }
 
 #summary {
