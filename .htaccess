@@ -1,5 +1,6 @@
 RewriteEngine on
-RewriteRule ^steamgroup$ https://steamcommunity.com/groups/steampcmasterrace [L]
+RewriteRule ^steam$ https://steamcommunity.com/groups/steampcmasterrace [L]
 RewriteRule ^irc$ http://www.reddit.com/r/pcmasterrace/wiki/irc [L]
 RewriteRule ^facebook$ https://www.facebook.com/OfficialPCMasterRace [L]
 RewriteRule ^twitter$ https://twitter.com/PCMasterRaceSub [L]
+RewriteRule ^reddit$ http://www.reddit.com/r/PCMasterRace [L]
