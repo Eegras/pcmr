@@ -10,7 +10,7 @@ if (window.orientation != undefined) {
     $(".fsholder").css("display", "none");
 } else {
     $(".showholder").append('<iframe class = "redshow" src="http://redditp.com/r/pcmasterrace"></iframe>');
-    $(".redshow").css("height", String(($(window).height() - (parseInt($(".top").css("height").split("px")[0]) + parseInt($(".fsholder").css("height").split("px")[0]))  + 110) + "px" ));
+    $(".redshow").css("height", String((window.innerHeight - (parseInt($(".top").css("height").split("px")[0]) + parseInt($(".fsholder").css("height").split("px")[0]))  + 110) + "px" ));
     $(".fsholder").css("width", "25%");
 }
 
@@ -57,5 +57,5 @@ function toggleSS () {
 };
 
 $(window).resize(function () {
-    $(".redshow").css("height", String(($(window).height() - (parseInt($(".top").css("height").split("px")[0]) + parseInt($(".fsholder").css("height").split("px")[0]))  + 110) + "px" ));
+    $(".redshow").css("height", String((window.innerHeight - (parseInt($(".top").css("height").split("px")[0]) + parseInt($(".fsholder").css("height").split("px")[0]))  + 110) + "px" ));
 });
