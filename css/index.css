@@ -101,15 +101,15 @@ h1 {
 	border: none;
 	position: fixed;
 	right: 0px;
+	bottom: 0px;
 	top: 130px;
-	width: 27%;
-	height: 98%;
+	width: 25%;
+	height: 92%;
 	-webkit-transition:all 350ms linear;
     -moz-transition:all 350ms linear;
     -o-transition:all 350ms linear;
     transition:all 350ms linear;
 }
-
 
 .fsholder {
 	position: fixed;
@@ -163,7 +163,7 @@ h1 {
 	padding-right: 4%;
 	padding-bottom: 3%;
 	background-color: #FFF;
-	font-size: 16px;
+	font-size: 15px;
 	-webkit-box-shadow: 20px 20px 0px 0px rgba(0, 0, 0, 0.2);
    	-moz-box-shadow: 20px 20px 0px 0px rgba(0, 0, 0, 0.2);
     box-shadow: 20px 20px 0px 0px rgba(0, 0, 0, 0.2);
@@ -171,7 +171,6 @@ h1 {
 
 #summary {
 	margin-top: 120px;
-	font-size: 18px;
 }
 
 	#oswrapper {

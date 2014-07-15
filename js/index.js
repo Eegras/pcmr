@@ -10,7 +10,7 @@ if (window.orientation != undefined) {
     $(".fsholder").css("display", "none");
 } else {
     $(".showholder").append('<iframe class = "redshow" src="http://redditp.com/r/pcmasterrace"></iframe>');
-    $(".fsholder").css("width", "27%");
+    $(".fsholder").css("width", "25%");
 }
 
 if (window.orientation == 0 || window.orientation == 180) {
@@ -49,8 +49,8 @@ function toggleSS () {
         $(".fsholder").css("width", "100%");
         fs = false;
     } else {
-        $(".redshow").css("width", "27%");
-        $(".fsholder").css("width", "27%");
+        $(".redshow").css("width", "25%");
+        $(".fsholder").css("width", "25%");
         fs = true;
     }
 };
