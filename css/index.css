@@ -22,7 +22,7 @@ h1 {
 	right: 0px;
 	top: 90px;
 	width: 27%;
-	height: 98%;
+	height: 90%;
 }
 
 .top {
@@ -34,6 +34,18 @@ h1 {
 
 .wrapper {
 	padding: 10px;
+}
+
+.cycle {
+	position: fixed;
+	right: 0px;
+	bottom: 0px;
+	width: 27%;
+}
+
+.cycleimg {
+	height: auto;
+	width: 100%;
 }
 
 .label {
