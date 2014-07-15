@@ -12,28 +12,6 @@ h1 {
 	font-family: 'Oswald', sans-serif;
 }
 
-b {
-	font-size: 20px;
-}
-
-.cycle {
-	position: fixed;
-	bottom: 0;
-	right: 0;
-	width: 16%;
-	max-height: 30%;
-	-webkit-transition:all 150ms linear;
-    -moz-transition:all 150ms linear;
-    -o-transition:all 150ms linear;
-    transition:all 150ms linear;
-
-}
-
-.cycleimg {
-	width: 100%;
-	height: auto;
-}
-
 .top {
 	position: fixed;
 	top: 0%;
@@ -43,6 +21,33 @@ b {
 
 .wrapper {
 	padding: 10px;
+}
+
+.cycle {
+	z-index: -1;
+	position: fixed;
+	right: -2px;
+	top: 90px;
+	height: 100%;
+	width: 25%;
+}
+
+.cycleimg {
+	height: auto;
+	width: 100%;
+}
+
+.label {
+	font-family: 'Oswald', sans-serif;
+	padding-top: 7px;
+	font-size: 24px;
+	color: #FCD100;
+	right: 40%;
+	opacity: 0;
+	-webkit-transition:all 100ms linear;
+    -moz-transition:all 100ms linear;
+    -o-transition:all 100ms linear;
+    transition:all 100ms linear;
 }
 
 .title {
@@ -56,21 +61,23 @@ b {
 }
 
 .img {
-	width: 40% !important;
+	width: 55% !important;
 	margin-right: 50px;
+	margin-top: 15px;
 	float: right;
-}
+}	
 
 .icon {
 	float: right;
-	margin-left: 5%;s
+	margin: 10px;
+	margin-top: 0px;
+	margin-left: 5%;
 	margin-right: 0px;
 	height: 48px;
-	margin-top: 20px;
-	-webkit-transition:all 150ms linear;
-    -moz-transition:all 150ms linear;
-    -o-transition:all 150ms linear;
-    transition:all 150ms linear;
+	-webkit-transition:all 100ms linear;
+    -moz-transition:all 100ms linear;
+    -o-transition:all 100ms linear;
+    transition:all 100ms linear;
 }
 
 .icon:hover {
@@ -79,38 +86,76 @@ b {
 	-ms-transform:scale(1.25, 1.25);
 	-o-transform:scale(1.25, 1.25);
 	transform:scale(1.25, 1.25);
-	-webkit-transition:all 150ms linear;
-    -moz-transition:all 150ms linear;
-    -o-transition:all 150ms linear;
-    transition:all 150ms linear;
+	-webkit-transition:all 100ms linear;
+    -moz-transition:all 100ms linear;
+    -o-transition:all 100ms linear;
+    transition:all 100ms linear;
 }
 
 
-/* Navbar */
+.sidebar {
+	background-color: #FF0000;
+}
 
-	.nav {
-		width: 50%;	
-		margin-right: 80%;
-	}
-	.nav a {
-		display: inline;
-	}
+.redshow {
+	border: none;
+	position: fixed;
+	right: 0px;
+	bottom: 0px;
+	top: 130px;
+	width: 25%;
+	height: 25%;
+	-webkit-transition:all 350ms linear;
+    -moz-transition:all 350ms linear;
+    -o-transition:all 350ms linear;
+    transition:all 350ms linear;
+}
 
-	.label {
-		position: fixed;
-		color: #FCD100;
-		right: 450px;
-		top: 40px;
-		font-size: 24px;
-		opacity: 0;
-		-webkit-transition:all 150ms linear;
-	    -moz-transition:all 150ms linear;
-	    -o-transition:all 150ms linear;
-	    transition:all 150ms linear;
-	}
+.fsholder {
+	position: fixed;
+	width: 25%;
+	top: 90px;
+	right: 0px;
+	height: 10%;
+	background-color: #000;
+	-webkit-transition:all 350ms linear;
+    -moz-transition:all 350ms linear;
+    -o-transition:all 350ms linear;
+    transition:all 350ms linear;
+}
+
+.fs {
+	padding: 10px;
+	padding-left: 20px;
+	position: relative;
+	width: 24px;
+	height: auto;
+	-webkit-transform:scale(1.25, 1.25);
+	-moz-transform:scale(1.25, 1.25);
+	-ms-transform:scale(1.25, 1.25);
+	-o-transform:scale(1.25, 1.25);
+	transform:scale(1.25, 1.25);
+	-webkit-transition:all 100ms linear;
+    -moz-transition:all 100ms linear;
+    -o-transition:all 100ms linear;
+    transition:all 100ms linear;
+}
+
+.fs:hover {
+	-webkit-transform:scale(2, 2);
+	-moz-transform:scale(2, 2);
+	-ms-transform:scale(2, 2);
+	-o-transform:scale(2, 2);
+	transform:scale(1.1, 1.1);
+	-webkit-transition:all 100ms linear;
+    -moz-transition:all 100ms linear;
+    -o-transition:all 100ms linear;
+    transition:all 100ms linear;
+}
+
 
 .content {
-	width: 70%;
+	width: 60%;
 	margin-left: 2%;
 	margin-right: auto;
 	padding: 1%;
@@ -118,7 +163,7 @@ b {
 	padding-right: 4%;
 	padding-bottom: 3%;
 	background-color: #FFF;
-	font-size: 16px;
+	font-size: 15px;
 	-webkit-box-shadow: 20px 20px 0px 0px rgba(0, 0, 0, 0.2);
    	-moz-box-shadow: 20px 20px 0px 0px rgba(0, 0, 0, 0.2);
     box-shadow: 20px 20px 0px 0px rgba(0, 0, 0, 0.2);
@@ -126,7 +171,6 @@ b {
 
 #summary {
 	margin-top: 120px;
-	font-size: 18px;
 }
 
 	#oswrapper {
@@ -143,10 +187,10 @@ b {
 		padding-right: 0px;
 		margin-right: 0px;
 		height: 72px;
-		-webkit-transition:all 150ms linear;
-	    -moz-transition:all 150ms linear;
-	    -o-transition:all 150ms linear;
-	    transition:all 150ms linear;
+		-webkit-transition:all 100ms linear;
+	    -moz-transition:all 100ms linear;
+	    -o-transition:all 100ms linear;
+	    transition:all 100ms linear;
 	}
 
 	.osimg:hover {
@@ -155,8 +199,12 @@ b {
 		-ms-transform:translateY(-20px);
 		-o-transform:translateY(-20px);
 		transform:translateY(-20px);
-		-webkit-transition:all 150ms linear;
-	    -moz-transition:all 150ms linear;
-	    -o-transition:all 150ms linear;
-	    transition:all 150ms linear;
+		-webkit-transition:all 100ms linear;
+	    -moz-transition:all 100ms linear;
+	    -o-transition:all 100ms linear;
+	    transition:all 100ms linear;
 	}
+
+.toggle {
+	color: #FFF;
+}
