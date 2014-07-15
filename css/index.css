@@ -38,7 +38,7 @@ h1 {
 
 .label {
 	font-family: 'Oswald', sans-serif;
-	
+	padding-top: 7px;
 	font-size: 24px;
 	color: #FCD100;
 	right: 40%;
@@ -60,8 +60,9 @@ h1 {
 }
 
 .img {
-	width: 70% !important;
+	width: 55% !important;
 	margin-right: 50px;
+	margin-top: 15px;
 	float: right;
 }
 
