@@ -26,9 +26,10 @@ h1 {
 .cycle {
 	z-index: -1;
 	position: fixed;
-	right: 0px;
-	bottom: 0px;
-	width: 27%;
+	right: -2px;
+	top: 90px;
+	height: 100%;
+	width: 25%;
 }
 
 .cycleimg {
