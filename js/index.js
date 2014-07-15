@@ -9,7 +9,7 @@ if (window.orientation != undefined) {
     $(".redshow").css("display", "none");
     $(".fsholder").css("display", "none");
 } else {
-    $(".showholder").append('<iframe class = "redshow" src="http://redditp.com/r/pcmasterrace"></iframe>');
+    $(".showholder").append('<iframe class = "redshow" src="http://redditp.com/r/battlestations"></iframe>');
     $(".redshow").css("height", String((window.innerHeight - (parseInt($(".top").css("height").split("px")[0]) + parseInt($(".fsholder").css("height").split("px")[0]))  + 110) + "px" ));
     $(".fsholder").css("width", "25%");
 }
