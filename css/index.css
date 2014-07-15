@@ -38,11 +38,10 @@ h1 {
 
 .label {
 	font-family: 'Oswald', sans-serif;
-	position: fixed;
-	top: 12px;
-	font-size: 32px;
+	padding-top: 7px;
+	font-size: 24px;
 	color: #FCD100;
-	right: 550px;
+	right: 40%;
 	opacity: 0;
 	-webkit-transition:all 150ms linear;
     -moz-transition:all 150ms linear;
@@ -61,8 +60,9 @@ h1 {
 }
 
 .img {
-	width: 40% !important;
+	width: 55% !important;
 	margin-right: 50px;
+	margin-top: 15px;
 	float: right;
 }
 
