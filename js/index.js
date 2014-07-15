@@ -5,6 +5,11 @@ $(".link").hover(function () {
     $(".label").css("opacity", "0");
 });
 
+
+// if (window.orientation != undefined) {
+//     $(".redshow").css("opacity", 0);
+// }
+
 if (window.orientation == 0 || window.orientation == 180) {
     $(".sidebar").css("opacity", 0);
 }
@@ -32,3 +37,17 @@ $(window).bind('orientationchange', function (e) {
     }
 
 });
+
+var fs = true;
+
+function toggleSS () {
+    if (fs) {
+        $(".redshow").css("width", "100%");
+        $(".fsholder").css("width", "100%");
+        fs = false;
+    } else {
+        $(".redshow").css("width", "27%");
+        $(".fsholder").css("width", "27%");
+        fs = true;
+    }
+};

@@ -12,19 +12,6 @@ h1 {
 	font-family: 'Oswald', sans-serif;
 }
 
-.sidebar {
-	background-color: #FF0000;
-}
-
-.redshow {
-	border: none;
-	position: fixed;
-	right: 0px;
-	top: 90px;
-	width: 27%;
-	height: 90%;
-}
-
 .top {
 	position: fixed;
 	top: 0%;
@@ -37,6 +24,7 @@ h1 {
 }
 
 .cycle {
+	z-index: -1;
 	position: fixed;
 	right: 0px;
 	bottom: 0px;
@@ -102,6 +90,50 @@ h1 {
     -o-transition:all 150ms linear;
     transition:all 150ms linear;
 }
+
+
+.sidebar {
+	background-color: #FF0000;
+}
+
+.redshow {
+	border: none;
+	position: fixed;
+	right: 0px;
+	top: 130px;
+	width: 27%;
+	height: 90%;
+	-webkit-transition:all 350ms linear;
+    -moz-transition:all 350ms linear;
+    -o-transition:all 350ms linear;
+    transition:all 350ms linear;
+}
+
+
+.fsholder {
+	position: fixed;
+	width: 27%;
+	top: 90px;
+	right: 0px;
+	height: 10%;
+	background-color: #000;
+	-webkit-transition:all 350ms linear;
+    -moz-transition:all 350ms linear;
+    -o-transition:all 350ms linear;
+    transition:all 350ms linear;
+}
+
+.fs {
+	padding: 10px;
+	position: relative;
+	width: 24px;
+	height: auto;
+	-webkit-transition:all 350ms linear;
+    -moz-transition:all 350ms linear;
+    -o-transition:all 350ms linear;
+    transition:all 350ms linear;
+}
+
 .content {
 	width: 60%;
 	margin-left: 2%;
@@ -153,3 +185,7 @@ h1 {
 	    -o-transition:all 150ms linear;
 	    transition:all 150ms linear;
 	}
+
+.toggle {
+	color: #FFF;
+}
