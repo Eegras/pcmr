@@ -8,6 +8,7 @@ $(".link").hover(function () {
 
 if (window.orientation != undefined) {
     $(".redshow").css("opacity", 0);
+    $(".fsholder").css("opacity", 0);
 }
 
 if (window.orientation == 0 || window.orientation == 180) {
