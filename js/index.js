@@ -6,9 +6,9 @@ $(".link").hover(function () {
 });
 
 
-// if (window.orientation != undefined) {
-//     $(".redshow").css("opacity", 0);
-// }
+if (window.orientation != undefined) {
+    $(".redshow").css("opacity", 0);
+}
 
 if (window.orientation == 0 || window.orientation == 180) {
     $(".sidebar").css("opacity", 0);
