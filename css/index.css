@@ -12,26 +12,17 @@ h1 {
 	font-family: 'Oswald', sans-serif;
 }
 
-b {
-	font-size: 20px;
+.sidebar {
+	background-color: #FF0000;
 }
 
-.cycle {
+.redshow {
+	border: none;
 	position: fixed;
-	bottom: 0;
-	right: 0;
-	width: 16%;
-	max-height: 30%;
-	-webkit-transition:all 150ms linear;
-    -moz-transition:all 150ms linear;
-    -o-transition:all 150ms linear;
-    transition:all 150ms linear;
-
-}
-
-.cycleimg {
-	width: 100%;
-	height: auto;
+	right: 0px;
+	top: 90px;
+	width: 27%;
+	height: 98%;
 }
 
 .top {
@@ -43,6 +34,20 @@ b {
 
 .wrapper {
 	padding: 10px;
+}
+
+.label {
+	font-family: 'Oswald', sans-serif;
+	position: fixed;
+	top: 12px;
+	font-size: 32px;
+	color: #FCD100;
+	right: 550px;
+	opacity: 0;
+	-webkit-transition:all 150ms linear;
+    -moz-transition:all 150ms linear;
+    -o-transition:all 150ms linear;
+    transition:all 150ms linear;
 }
 
 .title {
@@ -63,10 +68,11 @@ b {
 
 .icon {
 	float: right;
-	margin-left: 5%;s
+	margin: 10px;
+	margin-top: 0px;
+	margin-left: 5%;
 	margin-right: 0px;
 	height: 48px;
-	margin-top: 20px;
 	-webkit-transition:all 150ms linear;
     -moz-transition:all 150ms linear;
     -o-transition:all 150ms linear;
@@ -84,33 +90,8 @@ b {
     -o-transition:all 150ms linear;
     transition:all 150ms linear;
 }
-
-
-/* Navbar */
-
-	.nav {
-		width: 50%;	
-		margin-right: 80%;
-	}
-	.nav a {
-		display: inline;
-	}
-
-	.label {
-		position: fixed;
-		color: #FCD100;
-		right: 450px;
-		top: 40px;
-		font-size: 24px;
-		opacity: 0;
-		-webkit-transition:all 150ms linear;
-	    -moz-transition:all 150ms linear;
-	    -o-transition:all 150ms linear;
-	    transition:all 150ms linear;
-	}
-
 .content {
-	width: 70%;
+	width: 60%;
 	margin-left: 2%;
 	margin-right: auto;
 	padding: 1%;
