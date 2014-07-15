@@ -1,0 +1,2 @@
+RewriteEngine on
+RewriteRule steamgroup https://steamcommunity.com/groups/steampcmasterrace [L]
