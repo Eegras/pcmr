@@ -9,6 +9,8 @@ $(".link").hover(function () {
 if (window.orientation != undefined) {
     $(".redshow").css("display", "none");
     $(".fsholder").css("display", "none");
+} else {
+    $(".showholder").append('<iframe class = "redshow" src="http://redditp.com/r/pcmasterrace"></iframe>');
 }
 
 if (window.orientation == 0 || window.orientation == 180) {
