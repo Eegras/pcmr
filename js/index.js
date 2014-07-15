@@ -1,3 +1,10 @@
+$(".link").hover(function() {
+    $(".label").text($(this).attr("data-type"));
+    $(".label").css("opacity", "1");
+}, function() {
+    $(".label").css("opacity", "0");
+});
+
 if (window.orientation == 0 || window.orientation == 180) {
     $(".cycle").css("opacity", 0);
 }
