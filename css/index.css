@@ -44,10 +44,10 @@ h1 {
 	color: #FCD100;
 	right: 40%;
 	opacity: 0;
-	-webkit-transition:all 150ms linear;
-    -moz-transition:all 150ms linear;
-    -o-transition:all 150ms linear;
-    transition:all 150ms linear;
+	-webkit-transition:all 100ms linear;
+    -moz-transition:all 100ms linear;
+    -o-transition:all 100ms linear;
+    transition:all 100ms linear;
 }
 
 .title {
@@ -74,10 +74,10 @@ h1 {
 	margin-left: 5%;
 	margin-right: 0px;
 	height: 48px;
-	-webkit-transition:all 150ms linear;
-    -moz-transition:all 150ms linear;
-    -o-transition:all 150ms linear;
-    transition:all 150ms linear;
+	-webkit-transition:all 100ms linear;
+    -moz-transition:all 100ms linear;
+    -o-transition:all 100ms linear;
+    transition:all 100ms linear;
 }
 
 .icon:hover {
@@ -86,10 +86,10 @@ h1 {
 	-ms-transform:scale(1.25, 1.25);
 	-o-transform:scale(1.25, 1.25);
 	transform:scale(1.25, 1.25);
-	-webkit-transition:all 150ms linear;
-    -moz-transition:all 150ms linear;
-    -o-transition:all 150ms linear;
-    transition:all 150ms linear;
+	-webkit-transition:all 100ms linear;
+    -moz-transition:all 100ms linear;
+    -o-transition:all 100ms linear;
+    transition:all 100ms linear;
 }
 
 
@@ -103,7 +103,7 @@ h1 {
 	right: 0px;
 	top: 130px;
 	width: 27%;
-	height: 90%;
+	height: 98%;
 	-webkit-transition:all 350ms linear;
     -moz-transition:all 350ms linear;
     -o-transition:all 350ms linear;
@@ -113,7 +113,7 @@ h1 {
 
 .fsholder {
 	position: fixed;
-	width: 27%;
+	width: 25%;
 	top: 90px;
 	right: 0px;
 	height: 10%;
@@ -126,14 +126,33 @@ h1 {
 
 .fs {
 	padding: 10px;
+	padding-left: 20px;
 	position: relative;
 	width: 24px;
 	height: auto;
-	-webkit-transition:all 350ms linear;
-    -moz-transition:all 350ms linear;
-    -o-transition:all 350ms linear;
-    transition:all 350ms linear;
+	-webkit-transform:scale(1.25, 1.25);
+	-moz-transform:scale(1.25, 1.25);
+	-ms-transform:scale(1.25, 1.25);
+	-o-transform:scale(1.25, 1.25);
+	transform:scale(1.25, 1.25);
+	-webkit-transition:all 100ms linear;
+    -moz-transition:all 100ms linear;
+    -o-transition:all 100ms linear;
+    transition:all 100ms linear;
 }
+
+.fs:hover {
+	-webkit-transform:scale(2, 2);
+	-moz-transform:scale(2, 2);
+	-ms-transform:scale(2, 2);
+	-o-transform:scale(2, 2);
+	transform:scale(1.1, 1.1);
+	-webkit-transition:all 100ms linear;
+    -moz-transition:all 100ms linear;
+    -o-transition:all 100ms linear;
+    transition:all 100ms linear;
+}
+
 
 .content {
 	width: 60%;
@@ -169,10 +188,10 @@ h1 {
 		padding-right: 0px;
 		margin-right: 0px;
 		height: 72px;
-		-webkit-transition:all 150ms linear;
-	    -moz-transition:all 150ms linear;
-	    -o-transition:all 150ms linear;
-	    transition:all 150ms linear;
+		-webkit-transition:all 100ms linear;
+	    -moz-transition:all 100ms linear;
+	    -o-transition:all 100ms linear;
+	    transition:all 100ms linear;
 	}
 
 	.osimg:hover {
@@ -181,10 +200,10 @@ h1 {
 		-ms-transform:translateY(-20px);
 		-o-transform:translateY(-20px);
 		transform:translateY(-20px);
-		-webkit-transition:all 150ms linear;
-	    -moz-transition:all 150ms linear;
-	    -o-transition:all 150ms linear;
-	    transition:all 150ms linear;
+		-webkit-transition:all 100ms linear;
+	    -moz-transition:all 100ms linear;
+	    -o-transition:all 100ms linear;
+	    transition:all 100ms linear;
 	}
 
 .toggle {

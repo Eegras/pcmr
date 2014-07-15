@@ -5,12 +5,12 @@ $(".link").hover(function () {
     $(".label").css("opacity", "0");
 });
 
-
 if (window.orientation != undefined) {
     $(".redshow").css("display", "none");
     $(".fsholder").css("display", "none");
 } else {
     $(".showholder").append('<iframe class = "redshow" src="http://redditp.com/r/pcmasterrace"></iframe>');
+    $(".fsholder").css("width", "27%");
 }
 
 if (window.orientation == 0 || window.orientation == 180) {
