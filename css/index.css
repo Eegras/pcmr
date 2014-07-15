@@ -65,7 +65,7 @@ h1 {
 	margin-right: 50px;
 	margin-top: 15px;
 	float: right;
-}
+}	
 
 .icon {
 	float: right;
@@ -104,7 +104,7 @@ h1 {
 	bottom: 0px;
 	top: 130px;
 	width: 25%;
-	height: 92%;
+	height: 25%;
 	-webkit-transition:all 350ms linear;
     -moz-transition:all 350ms linear;
     -o-transition:all 350ms linear;

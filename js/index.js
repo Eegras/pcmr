@@ -54,3 +54,7 @@ function toggleSS () {
         fs = true;
     }
 };
+
+$(window).resize(function () {
+    $(".redshow").css("width", String((total - dist) + 110) + "px" );
+});
