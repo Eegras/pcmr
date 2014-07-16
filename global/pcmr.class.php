@@ -1,4 +1,7 @@
 <?php
+define("PCMR_HEADER",1);
+define("PCMR_NAVIGATION",2);
+define("PCMR_FOOTER",4);
 // content.php
 class pcmr 
 {
@@ -19,33 +22,41 @@ class pcmr
 		}
 	}
 
-	public __construct($header, $navigation, $sidebar, $footer)
+	public __construct($bits, $sidebar)
 	{
-		this::header = $header;
-		this::navigation = $navigation;
-		this::sidebar = $sidebar;
-		this::footer = $footer;
+		if ($bits && PCMR_HEADER == PCMR_NAVIGATION)
+			$this->header = true;
+
+		if ($bits && PCMR_NAVIGATION == PCMR_NAVIGATION)
+			$this->navigation = true;
+
+		$this->sidebar = $sidebar;
+
+		if ($bits && PCMR_FOOTER == PCMR_FOOTER)
+			$this->footer = true;
 	}
 
 	public function displayContent($content);
 	{
-		if (this::header)
+		if ($this->header)
 		{
 			echo file_get_contents('./global/header.php');
 		}
-		if (this::navigation)
+		if ($this->navigation)
 		{
 			echo file_get_contents('./global/navigation.php');
 		}
-		if (this::sidebar !== false)
+		if ($this->sidebar !== false)
 		{
-			if ($side = this::getSidebarContent($sidebar))
+			if ($side = $this->getSidebarContent($sidebar))
 			{
 				echo $side;
 			}
 		}
+		echo '<div class="content" id="summary">';
 		echo $content;
-		if (this::footer)
+		echo '</div>';
+		if ($this->footer)
 		{
 			echo file_get_contents('./global/footer.php');
 		}
