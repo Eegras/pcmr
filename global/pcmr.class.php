@@ -42,16 +42,16 @@ class pcmr
 		{
 			echo file_get_contents('./global/header.php');
 		}
-		if ($this->navigation)
-		{
-			echo file_get_contents('./global/navigation.php');
-		}
 		if ($this->sidebar !== false)
 		{
 			if ($side = $this->getSidebarContent($this->sidebar))
 			{
 				echo $side;
 			}
+		}
+		if ($this->navigation)
+		{
+			echo file_get_contents('./global/navigation.php');
 		}
 		echo '<div class="content" id="summary">';
 		echo $content;
