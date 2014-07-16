@@ -1,7 +1,19 @@
 <?php
+// How this works 
+// Include this line in _everything_.
 include('./global/pcmr.class.php');
+// This line init's the pcmr class.  First argument is a bitmask for what you want on the page
+// PCMR_HEADER is the header,
+// PCMR_FOOTER is the footer,
+// PCMR_NAVIGATION is the nav
+// The second arg is what sidebar you want to see.  This is in ./global/sidebar<THATSTRING>.php
+//    If blank, no sidebar.
 $c = new pcmr(PCMR_HEADER+PCMR_FOOTER+PCMR_NAVIGATION,"Subreddit");
-$c->displayContent(<<<HTML
+
+// This is heredoc fomat.  Super simple way to make a string without worrying about 
+// escaping quotes and that.  Heredoc begins with <<<STRING and ends with STRING; AS THE FIRST THING ON A LINE
+// Set that to a variable and call the last function.
+$content = <<<HTML
          <h1>
             WHY PC?
          </h1>
@@ -48,5 +60,9 @@ $c->displayContent(<<<HTML
          </p>
 
       </div>
-HTML);
+HTML;
+
+
+// This wraps it all up in nice bow and sends it to the browser.  Simple.
+$c->displayContent($content);
 

@@ -10,7 +10,7 @@ class pcmr
 	private $sidebar = false;
 	private $footer = false;
 
-	private getSidebarContent ($sidebarContentRequest)
+	private function getSidebarContent ($sidebarContentRequest)
 	{
 		if (file_exists('./global/sidebar'.$sidebarContentRequest.'.php'))
 		{
@@ -22,9 +22,9 @@ class pcmr
 		}
 	}
 
-	public __construct($bits, $sidebar)
+	public function __construct($bits, $sidebar)
 	{
-		if ($bits && PCMR_HEADER == PCMR_NAVIGATION)
+		if ($bits && PCMR_HEADER == PCMR_HEADER)
 			$this->header = true;
 
 		if ($bits && PCMR_NAVIGATION == PCMR_NAVIGATION)
@@ -36,7 +36,7 @@ class pcmr
 			$this->footer = true;
 	}
 
-	public function displayContent($content);
+	public function displayContent($content)
 	{
 		if ($this->header)
 		{
@@ -48,7 +48,7 @@ class pcmr
 		}
 		if ($this->sidebar !== false)
 		{
-			if ($side = $this->getSidebarContent($sidebar))
+			if ($side = $this->getSidebarContent($this->sidebar))
 			{
 				echo $side;
 			}
